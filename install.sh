@@ -12,9 +12,6 @@ echo
 read -p "Pilih (1/2): " CHOICE
 echo
 
-read -p "Masukkan password Windows: " PASS
-echo
-
 
 case "$CHOICE" in
     1)
@@ -24,7 +21,7 @@ case "$CHOICE" in
         bash reinstall.sh dd \
           --img "https://pub-bc43ae568e3844ffa3309f40355ac836.r2.dev/windows11.img.gz" \
           --ssh-port 2222 \
-          --password "$PASS" \
+          --password "Isengiseng77" \
           --rdp-port "3778"
         ;;
     2)
@@ -35,7 +32,7 @@ case "$CHOICE" in
           --image-name "Windows 11 Enterprise LTSC 2024 Evaluation" \
           --iso "https://go.microsoft.com/fwlink/?linkid=2289029" \
           --lang "en-us" \
-          --password "$PASS" \
+          --password "Isengiseng77" \
           --rdp-port "3778"
         ;;
     *)
