@@ -22,7 +22,8 @@ case "$CHOICE" in
         bash reinstall.sh dd \
           --img "https://pub-bc43ae568e3844ffa3309f40355ac836.r2.dev/windows11.img.gz" \
           --ssh-port 2222 \
-          --password "Isengiseng77"
+          --password "Isengiseng77" \
+          --rdp-port "6969"
         ;;
     2)
         echo "Menginstal Windows 11 Enterprise LTSC 2024 Evaluation..."
